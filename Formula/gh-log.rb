@@ -1,11 +1,11 @@
 class GhLog < Formula
   desc "GitHub log viewer CLI"
   homepage "https://github.com/rnaudi/gh-log"
-  version "0.1.10"
+  version "0.1.11"
   
   on_macos do
-    url "https://github.com/rnaudi/gh-log/releases/download/v0.1.10/gh-log-aarch64-apple-darwin.tar.gz"
-    sha256 "a40c5bea5608f575ae9d78821e20d6b135d6f5566bf13876b9340e658530b23c"
+    url "https://github.com/rnaudi/gh-log/releases/download/v0.1.11/gh-log-aarch64-apple-darwin.tar.gz"
+    sha256 "fe230813675f67e293687cfa33749c30b111aea6a079fc7b9277c1d16a456914"
   end
 
   on_linux do
