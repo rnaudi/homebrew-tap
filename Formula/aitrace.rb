@@ -5,21 +5,21 @@
 class Aitrace < Formula
   desc "Zero-config agent tracer"
   homepage "https://github.com/rnaudi/aitrace"
-  version "0.1.3"
+  version "0.1.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rnaudi/aitrace/releases/download/v0.1.3/aitrace-darwin-amd64.tar.gz"
-      sha256 "af1025c07e595edcf62d0c8aa76d9837308e1113765175c1f9ee6fa297f10757"
+      url "https://github.com/rnaudi/aitrace/releases/download/v0.1.4/aitrace-darwin-amd64.tar.gz"
+      sha256 "1fc4018e17c55502e7c69875b4f24842d6f9292721ea218ac695146542bcc410"
 
       define_method(:install) do
         bin.install "aitrace"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rnaudi/aitrace/releases/download/v0.1.3/aitrace-darwin-arm64.tar.gz"
-      sha256 "9250c96eb93557dd0e4bfd21dc230e182fda4726f2e6edc748d20d2c80ecf628"
+      url "https://github.com/rnaudi/aitrace/releases/download/v0.1.4/aitrace-darwin-arm64.tar.gz"
+      sha256 "4fde3f3a1ddb2392d39f3a1f572d3b1740364ee57f2eec061706f9db918362cf"
 
       define_method(:install) do
         bin.install "aitrace"
@@ -29,15 +29,15 @@ class Aitrace < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rnaudi/aitrace/releases/download/v0.1.3/aitrace-linux-amd64.tar.gz"
-      sha256 "054539eb2f4f79dcd930a5ebfc1cc646cc9604c6f6c225f0ad76f2a80d1bdcbc"
+      url "https://github.com/rnaudi/aitrace/releases/download/v0.1.4/aitrace-linux-amd64.tar.gz"
+      sha256 "1bb3330b9e936f729eee7529a25acda49c879b6e7c87044d8846b88fd89473ab"
       define_method(:install) do
         bin.install "aitrace"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rnaudi/aitrace/releases/download/v0.1.3/aitrace-linux-arm64.tar.gz"
-      sha256 "987bced967ee132e853b74a8797fd2081cb7370129a1b108838b7e761408969d"
+      url "https://github.com/rnaudi/aitrace/releases/download/v0.1.4/aitrace-linux-arm64.tar.gz"
+      sha256 "1eb6be02fcac8376a096e61b43512528c3a320ba88feca6838ed05587119a183"
       define_method(:install) do
         bin.install "aitrace"
       end
